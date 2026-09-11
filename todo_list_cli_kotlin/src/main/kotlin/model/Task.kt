@@ -11,8 +11,11 @@ fun daftarTugas() {
     }
     val mapTugas = a.associateBy { it.id to it.tugas }
     for (i in a){
-        println(i)
+        println("Id Tugas: ${i.id}")
+        println("Nama Tugas: ${i.tugas}")
+        println("Status Tugas: ${i.status}")
     }
+    readln()
 }
 
 fun tambahTugas(){
@@ -22,12 +25,14 @@ fun tambahTugas(){
         println("0. Exit")
         print("Masukkan Nama Tugas: ")
         var nilai = readln()
-        val baru = Tugas(idBerikut, nilai)
-        a.add(baru)
         if (nilai == "0"){
-            a.removeLast()
             penjagaTambah = false
+            continue
         }
+        print("Masukkan Status Tugas: ")
+        var nilaiStatus = readln()
+        val baru = Tugas(idBerikut, nilai, nilaiStatus)
+        a.add(baru)
         idBerikut++
     }
 }
@@ -44,5 +49,6 @@ fun hapusTugas(){
         if (nilai == "0"){
             penjagaHapus = false
         }
+        println("Data berhasil dihapus!")
     }
 }
