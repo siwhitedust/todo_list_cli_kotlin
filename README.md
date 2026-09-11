@@ -17,7 +17,7 @@ Main:<br>
 See all list:<br>
 <img width="364" height="236" alt="image" src="https://github.com/user-attachments/assets/ac5da7a3-617e-41c4-90a5-5b4961b3037c" />
 
-Insert task:
+Insert task:<br>
 <img width="364" height="227" alt="image" src="https://github.com/user-attachments/assets/1bf55368-855b-40d9-8cf5-17f75cc2501c" /> <br>
 <img width="371" height="277" alt="image" src="https://github.com/user-attachments/assets/f2d12217-ff00-4483-b0cd-ff2202ddca38" /> <br>
 
