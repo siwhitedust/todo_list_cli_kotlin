@@ -9,8 +9,7 @@ Feature :
 Using simple Kotlin data class, functions and data passing with import
 
 PROJECT PHOTO 📷
-Main: 
-
+Main: <br>
 <img width="359" height="159" alt="image" src="https://github.com/user-attachments/assets/1d7b4f4d-1013-4f1c-af6e-563d0a478ae7" />
 
 
@@ -33,9 +32,9 @@ After insert:
 
 Delete data:
 
-<img width="371" height="226" alt="image" src="https://github.com/user-attachments/assets/7e474a60-5587-4a16-9996-b5fdfc0d0759" /> <\n>
+<img width="371" height="226" alt="image" src="https://github.com/user-attachments/assets/7e474a60-5587-4a16-9996-b5fdfc0d0759" />
 
-<img width="362" height="250" alt="image" src="https://github.com/user-attachments/assets/643f3f5d-96b8-406f-9083-6acdcc1481a5" /> <\n>
+<img width="362" height="250" alt="image" src="https://github.com/user-attachments/assets/643f3f5d-96b8-406f-9083-6acdcc1481a5" />
 
 
 After delete:
