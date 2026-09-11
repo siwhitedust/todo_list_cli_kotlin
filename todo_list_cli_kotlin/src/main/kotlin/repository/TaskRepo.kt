@@ -1,3 +1,3 @@
 package main.kotlin.repository
 
-data class Tugas(val id: Int, val tugas: String, val status: String)
+data class Tugas(val id: Int, val tugas: String, var status: String)

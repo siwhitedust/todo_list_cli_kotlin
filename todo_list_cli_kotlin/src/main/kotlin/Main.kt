@@ -3,6 +3,7 @@ package main.kotlin
 import main.kotlin.model.daftarTugas
 import main.kotlin.model.hapusTugas
 import main.kotlin.model.tambahTugas
+import main.kotlin.model.updateTugas
 
 fun main(){
     while (true){
@@ -28,6 +29,10 @@ fun main(){
 
         if(inputUser == 3){
             hapusTugas()
+        }
+
+        if(inputUser == 4){
+            updateTugas()
         }
 
         if (inputUser == 0){
