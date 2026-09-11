@@ -1,6 +1,7 @@
 package main.kotlin
 
 import main.kotlin.model.daftarTugas
+import main.kotlin.model.hapusTugas
 import main.kotlin.model.tambahTugas
 
 fun main(){
@@ -11,11 +12,12 @@ fun main(){
         println("2. Tambah Tugas")
         println("3. Hapus Tugas")
         println("4. Tugas Selesai")
-        println("5. Exit")
+        println("0. Exit")
         print("Masukkan perintah sesuai angka: ")
         val inputUser = readln().toInt()
 
         if (inputUser == 1){
+            print(("\n"))
             println("Daftar Tugas Kamu: ")
             daftarTugas()
         }
@@ -24,7 +26,11 @@ fun main(){
             tambahTugas()
         }
 
-        if (inputUser == 5){
+        if(inputUser == 3){
+            hapusTugas()
+        }
+
+        if (inputUser == 0){
             break
         }
     }

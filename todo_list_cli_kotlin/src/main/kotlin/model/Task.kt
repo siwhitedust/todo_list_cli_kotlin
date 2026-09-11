@@ -2,39 +2,47 @@ package main.kotlin.model
 
 import main.kotlin.repository.Tugas
 
-var a = mutableListOf<Tugas>()
+val a = mutableListOf<Tugas>()
+var idBerikut = 1
 
-fun tambahId(): Int{
-    var angka = 1
-    for (i in a.indices){
-        angka += i + 1
+fun daftarTugas() {
+    if (a.isEmpty()){
+        println("Tidak ada tugas")
     }
-    return angka
-}
-
-fun daftarTugas(){
-    print("\n")
+    val mapTugas = a.associateBy { it.id to it.tugas }
     for (i in a){
-        println("Tugas kamu adalah ${i.tugas} dengan id ${i.id}")
+        println(i)
     }
 }
 
-fun tambahTugas(): String{
-    var penjaga = true
-    while (penjaga){
+fun tambahTugas(){
+    var penjagaTambah = true
+    while (penjagaTambah){
         print("\n")
-        println("2. Exit")
+        println("0. Exit")
         print("Masukkan Nama Tugas: ")
         var nilai = readln()
-        a.add(Tugas(tambahId(),nilai))
-        if (nilai == "2"){
+        val baru = Tugas(idBerikut, nilai)
+        a.add(baru)
+        if (nilai == "0"){
             a.removeLast()
-            penjaga = false
+            penjagaTambah = false
         }
+        idBerikut++
     }
-    return a.toString()
 }
 
 fun hapusTugas(){
-
+    var penjagaHapus = true
+    while (penjagaHapus){
+        print("\n")
+        println("0. Exit")
+        print("Pilih Tugas yang ingin di hapus (id): ")
+        val nilai = readln()
+        val hapus = nilai.toIntOrNull()
+        a.removeIf{ it.id == hapus }
+        if (nilai == "0"){
+            penjagaHapus = false
+        }
+    }
 }
