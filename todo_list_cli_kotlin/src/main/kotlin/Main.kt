@@ -1,7 +1,7 @@
 package main.kotlin
 
-import main.kotlin.model.daftar_tugas
-import main.kotlin.model.tambah_tugas
+import main.kotlin.model.daftarTugas
+import main.kotlin.model.tambahTugas
 
 fun main(){
     while (true){
@@ -13,18 +13,18 @@ fun main(){
         println("4. Tugas Selesai")
         println("5. Exit")
         print("Masukkan perintah sesuai angka: ")
-        var input_user = readln().toInt()
+        val inputUser = readln().toInt()
 
-        if (input_user == 1){
+        if (inputUser == 1){
             println("Daftar Tugas Kamu: ")
-            daftar_tugas()
+            daftarTugas()
         }
 
-        if (input_user == 2){
-            tambah_tugas()
+        if (inputUser == 2){
+            tambahTugas()
         }
 
-        if (input_user == 5){
+        if (inputUser == 5){
             break
         }
     }

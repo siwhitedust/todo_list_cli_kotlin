@@ -4,7 +4,7 @@ import main.kotlin.repository.Tugas
 
 var a = mutableListOf<Tugas>()
 
-fun tambah_id(): Int{
+fun tambahId(): Int{
     var angka = 1
     for (i in a.indices){
         angka += i + 1
@@ -12,21 +12,21 @@ fun tambah_id(): Int{
     return angka
 }
 
-fun daftar_tugas(){
+fun daftarTugas(){
     print("\n")
     for (i in a){
         println("Tugas kamu adalah ${i.tugas} dengan id ${i.id}")
     }
 }
 
-fun tambah_tugas(): String{
+fun tambahTugas(): String{
     var penjaga = true
-    while (penjaga == true){
+    while (penjaga){
         print("\n")
         println("2. Exit")
         print("Masukkan Nama Tugas: ")
         var nilai = readln()
-        a.add(Tugas(tambah_id(),nilai))
+        a.add(Tugas(tambahId(),nilai))
         if (nilai == "2"){
             a.removeLast()
             penjaga = false
@@ -35,6 +35,6 @@ fun tambah_tugas(): String{
     return a.toString()
 }
 
-fun hapus_tugas(){
+fun hapusTugas(){
 
 }
