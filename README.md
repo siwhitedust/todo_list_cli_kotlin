@@ -19,7 +19,7 @@ See all list:<br>
 
 Insert task:
 <img width="364" height="227" alt="image" src="https://github.com/user-attachments/assets/1bf55368-855b-40d9-8cf5-17f75cc2501c" /> <br>
-<img width="371" height="277" alt="image" src="https://github.com/user-attachments/assets/f2d12217-ff00-4483-b0cd-ff2202ddca38" />
+<img width="371" height="277" alt="image" src="https://github.com/user-attachments/assets/f2d12217-ff00-4483-b0cd-ff2202ddca38" /> <br>
 
 
 After insert:<br>
@@ -28,7 +28,7 @@ After insert:<br>
 
 Delete data:<br>
 <img width="371" height="226" alt="image" src="https://github.com/user-attachments/assets/7e474a60-5587-4a16-9996-b5fdfc0d0759" /> <br>
-<img width="362" height="250" alt="image" src="https://github.com/user-attachments/assets/643f3f5d-96b8-406f-9083-6acdcc1481a5" />
+<img width="362" height="250" alt="image" src="https://github.com/user-attachments/assets/643f3f5d-96b8-406f-9083-6acdcc1481a5" /> <br>
 
 
 After delete:<br>
